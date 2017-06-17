@@ -1,1 +1,1 @@
-include ':app', ':lazylibrary'
+include ':app', ':lazylibrary', ':observer_demo'
