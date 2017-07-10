@@ -1,1 +1,1 @@
-include ':app', ':lazylibrary', ':observer_demo'
+include ':app', ':lazylibrary', ':observer_demo', ':rxretrofitlibrary'

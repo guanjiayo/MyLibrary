@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lazylibrary" />
             <option value="$PROJECT_DIR$/observer_demo" />
+            <option value="$PROJECT_DIR$/rxretrofitlibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
