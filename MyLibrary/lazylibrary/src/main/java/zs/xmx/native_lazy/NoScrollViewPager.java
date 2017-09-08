@@ -1,4 +1,4 @@
-package xmx.zs.bjframe.view;
+package zs.xmx.native_lazy;
 
 import android.content.Context;
 import android.util.AttributeSet;

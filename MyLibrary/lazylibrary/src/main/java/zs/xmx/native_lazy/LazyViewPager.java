@@ -1,4 +1,4 @@
-package xmx.zs.bjframe.view;
+package zs.xmx.native_lazy;
 
 /*
  * @创建者     默小铭
@@ -14,10 +14,6 @@ package xmx.zs.bjframe.view;
  * @新增内容
  *
  */
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 import android.content.Context;
 import android.database.DataSetObserver;
@@ -51,10 +47,14 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
 /**
  * Layout manager that allows the user to flip left and right
  * through pages of data.  You supply an implementation of a
- * {@link android.support.v4.view.PagerAdapter} to generate the pages that the view shows.
+ * {@link PagerAdapter} to generate the pages that the view shows.
  *
  * <p>Note this class is currently under early design and
  * development.  The API will likely change in later updates of
@@ -430,7 +430,7 @@ public class LazyViewPager extends ViewGroup {
      *
      * @param marginPixels Distance between adjacent pages in pixels
      * @see #getPageMargin()
-     * @see #setPageMarginDrawable(android.graphics.drawable.Drawable)
+     * @see #setPageMarginDrawable(Drawable)
      * @see #setPageMarginDrawable(int)
      */
     public void setPageMargin(int marginPixels) {
@@ -498,7 +498,7 @@ public class LazyViewPager extends ViewGroup {
     }
 
     /**
-     * Like {@link android.view.View#scrollBy}, but scroll smoothly instead of immediately.
+     * Like {@link View#scrollBy}, but scroll smoothly instead of immediately.
      *
      * @param x the number of pixels to scroll by on the X axis
      * @param y the number of pixels to scroll by on the Y axis
@@ -508,7 +508,7 @@ public class LazyViewPager extends ViewGroup {
     }
 
     /**
-     * Like {@link android.view.View#scrollBy}, but scroll smoothly instead of immediately.
+     * Like {@link View#scrollBy}, but scroll smoothly instead of immediately.
      *
      * @param x the number of pixels to scroll by on the X axis
      * @param y the number of pixels to scroll by on the Y axis
