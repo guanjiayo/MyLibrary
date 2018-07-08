@@ -1,1 +1,8 @@
-include ':app', ':lazylibrary', ':observer_demo','customcontrols','toolbar'
+include ':app',
+        ':lazylibrary',
+        ':observer_demo',
+        ':pay_library',
+        'customcontrols',
+        'toolbar',
+        ':lib-permission',':lib-permission-aop'
+

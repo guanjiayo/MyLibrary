@@ -6,8 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/customcontrols/customcontrols.iml" filepath="$PROJECT_DIR$/customcontrols/customcontrols.iml" />
       <module fileurl="file://$PROJECT_DIR$/lazylibrary/lazylibrary.iml" filepath="$PROJECT_DIR$/lazylibrary/lazylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-permission/lib-permission.iml" filepath="$PROJECT_DIR$/lib-permission/lib-permission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-permission-aop/lib-permission-aop.iml" filepath="$PROJECT_DIR$/lib-permission-aop/lib-permission-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/observer_demo/observer_demo.iml" filepath="$PROJECT_DIR$/observer_demo/observer_demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rxretrofitlibrary/rxretrofitlibrary.iml" filepath="$PROJECT_DIR$/rxretrofitlibrary/rxretrofitlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay_library/pay_library.iml" filepath="$PROJECT_DIR$/pay_library/pay_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/toolbar/toolbar.iml" />
     </modules>
   </component>
