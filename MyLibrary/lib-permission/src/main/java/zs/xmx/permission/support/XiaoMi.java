@@ -29,11 +29,11 @@ public class XiaoMi implements ISetting {
             intent = new Intent("miui.intent.action.APP_PERM_EDITOR");
             intent.setClassName("com.miui.securitycenter", "com.miui.permcenter.permissions.AppPermissionsEditorActivity");
             intent.putExtra("extra_pkgname", context.getPackageName());
-        } else if ("V8".equals(miuiVersion) || "V9".equals(miuiVersion)) {
+        } else if ("V8".equals(miuiVersion) || "V9".equals(miuiVersion) || "V10".equals(miuiVersion)) {
             intent = new Intent("miui.intent.action.APP_PERM_EDITOR");
             intent.setClassName("com.miui.securitycenter", "com.miui.permcenter.permissions.PermissionsEditorActivity");
             intent.putExtra("extra_pkgname", context.getPackageName());
-        } else {//todo v10需要看下
+        } else {
             Uri packageURI = Uri.parse("package:" + context.getApplicationInfo().packageName);
             intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, packageURI);
         }
