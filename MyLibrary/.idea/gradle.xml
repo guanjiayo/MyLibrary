@@ -11,10 +11,12 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/customcontrols" />
             <option value="$PROJECT_DIR$/lazylibrary" />
+            <option value="$PROJECT_DIR$/lib-lv-adapter" />
             <option value="$PROJECT_DIR$/lib-permission" />
             <option value="$PROJECT_DIR$/lib-permission-aop" />
+            <option value="$PROJECT_DIR$/lib-rv-adapter" />
+            <option value="$PROJECT_DIR$/listadapter_demo" />
             <option value="$PROJECT_DIR$/observer_demo" />
-            <option value="$PROJECT_DIR$/pay_library" />
             <option value="$PROJECT_DIR$/toolbar" />
           </set>
         </option>
