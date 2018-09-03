@@ -7,11 +7,22 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 
 /**
- * ViewPager that add items lazily in the two following situation:
- * <ul>
- *     <li>its adapter inherits from {@link LazyViewPagerAdapter}</li>
- *     <li>its adapter inherits from {@link LazyFragmentPagerAdapter} and Fragment implements {@link LazyFragmentPagerAdapter.Laziable} </li>
- * </ul>
+ * @使用方法
+ *   ViewPager View的懒加载
+ *    1.导入类库
+ *    2.在布局文件添加lazyViewpager控件
+ *    3.自定义 CustomLazyViewPagerAdapter 类继承 LazyViewPagerAdapter
+ *    4.绑定适配器 ((LazyViewPager) findViewById(R.id.lazy_view_pager)).setAdapter(new CustomLazyViewPagerAdapter(this));
+ *
+ *   ViewPager Fragment的懒加载
+ *    1.导入类库
+ *    2.在布局文件添加lazyViewpager控件
+ *    3.自定义CustomLazyFragmentPagerAdapter 类继承 LazyFragmentPagerAdapter
+ *    4.自定义 CustomFragment extends Fragment implements LazyFragmentPagerAdapter.Laziable
+ *    5.绑定适配器 ((LazyViewPager) findViewById(R.id.lazy_view_pager)).setAdapter(new CustomLazyFragmentPagerAdapter
+(getSupportFragmentManager()));
+ *
+ *
  */
 public class LazyViewPager extends ViewPager {
 

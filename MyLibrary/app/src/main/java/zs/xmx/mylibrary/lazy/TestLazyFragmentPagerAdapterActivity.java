@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +30,7 @@ import static android.view.ViewGroup.LayoutParams.*;
  * @补充内容  1.导入类库
  *           2.在布局文件添加viewpager控件
  *           3.自定义 CustomLazyFragmentPagerAdapter 类继承 LazyFragmentPagerAdapter
- *           4.实现getCount() 和  getItem() {把positon传给自定义CustomFragment}
+ *           4.实现getCount() 和  getItem() {把position传给自定义CustomFragment}
  *           5.自定义CustomFragment 继承 Fragment 实现 LazyFragmentPagerAdapter.Laziable 接口
  *           6.实现onCreateView 方法
  *
@@ -95,5 +96,16 @@ public class TestLazyFragmentPagerAdapterActivity extends FragmentActivity {
             return view;
         }
 
+        @Override
+        public void onStart() {
+            super.onStart();
+            Log.e("lazy", "onStart: ");
+        }
+
+        @Override
+        public void onPause() {
+            super.onPause();
+            Log.e("lazy", "onPause: ");
+        }
     }
 }

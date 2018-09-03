@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyLibrary.iml" filepath="$PROJECT_DIR$/MyLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/customcontrols/customcontrols.iml" filepath="$PROJECT_DIR$/customcontrols/customcontrols.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lazylibrary/lazylibrary.iml" filepath="$PROJECT_DIR$/lazylibrary/lazylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lazy_vp_lib/lazy_vp_lib.iml" filepath="$PROJECT_DIR$/lazy_vp_lib/lazy_vp_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib-lv-adapter/lib-lv-adapter.iml" filepath="$PROJECT_DIR$/lib-lv-adapter/lib-lv-adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib-permission/lib-permission.iml" filepath="$PROJECT_DIR$/lib-permission/lib-permission.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib-permission-aop/lib-permission-aop.iml" filepath="$PROJECT_DIR$/lib-permission-aop/lib-permission-aop.iml" />

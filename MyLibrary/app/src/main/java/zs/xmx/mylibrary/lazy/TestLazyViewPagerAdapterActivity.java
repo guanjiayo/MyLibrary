@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,6 +76,7 @@ public class TestLazyViewPagerAdapterActivity extends AppCompatActivity {
             view.setTextSize(18);
             view.setGravity(Gravity.CENTER);
             view.setBackgroundColor(Color.YELLOW);
+            Log.e("lazy", "View: ");
             return view;
         }
 
