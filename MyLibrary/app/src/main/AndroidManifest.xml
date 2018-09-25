@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="zs.xmx.mylibrary"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="zs.xmx.mylibrary">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -18,6 +20,7 @@
         <activity android:name=".lazy.TestLazyFragmentPagerAdapterActivity"/>
         <activity android:name=".lazy.TestLazyViewPagerAdapterActivity"/>
         <activity android:name=".lazy.LazyActivity"/>
+
     </application>
 
 </manifest>

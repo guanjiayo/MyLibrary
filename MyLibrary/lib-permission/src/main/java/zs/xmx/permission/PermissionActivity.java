@@ -17,6 +17,7 @@ import zs.xmx.permission.utils.PermissionUtils;
 
 /**
  * 一个隐藏的Activity专门用于申请权限
+ * //todo  把跳转的转场动画取消掉
  */
 public class PermissionActivity extends Activity {
     private static IPermission permissionListener;

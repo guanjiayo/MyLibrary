@@ -57,5 +57,10 @@
     <!--<activity android:name=".permission.PermissionActivity" />-->
     <!--</application>-->
 
+    <application>
+        <activity
+            android:name=".PermissionActivity"
+            />
+    </application>
 
 </manifest>
