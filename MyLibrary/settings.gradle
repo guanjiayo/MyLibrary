@@ -1,5 +1,5 @@
 include ':app', ':listadapter_demo',
-        ':lazy_vp_lib',
+        ':lib-lazy-vp',
         ':observer_demo',
         'customcontrols',
         'toolbar',

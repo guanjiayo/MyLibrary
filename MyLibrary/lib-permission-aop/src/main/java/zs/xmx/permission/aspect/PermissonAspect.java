@@ -25,7 +25,7 @@ import zs.xmx.permission.utils.PermissionUtils;
  */
 @Aspect
 public class PermissonAspect {
-    private static final String TAG = "PermissonAspect";
+    private static final String TAG = "PermissionAspect";
 
     private static final String PERMISSION_REQUEST_POINTCUT =
             "execution(@zs.xmx.permission.annotation.NeedPermission * *(..))";

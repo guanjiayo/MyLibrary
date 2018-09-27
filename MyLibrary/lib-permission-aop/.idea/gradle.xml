@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/.." />
+            <option value="$PROJECT_DIR$/../app" />
+            <option value="$PROJECT_DIR$/../customcontrols" />
+            <option value="$PROJECT_DIR$/../lazy_vp_lib" />
+            <option value="$PROJECT_DIR$/../lib-lv-adapter" />
+            <option value="$PROJECT_DIR$/../lib-permission" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../lib-rv-adapter" />
+            <option value="$PROJECT_DIR$/../listadapter_demo" />
+            <option value="$PROJECT_DIR$/../observer_demo" />
+            <option value="$PROJECT_DIR$/../toolbar" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

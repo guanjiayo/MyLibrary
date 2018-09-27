@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../MyLibrary.iml" filepath="$PROJECT_DIR$/../MyLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../customcontrols/customcontrols.iml" filepath="$PROJECT_DIR$/../customcontrols/customcontrols.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lazy_vp_lib/lazy_vp_lib.iml" filepath="$PROJECT_DIR$/../lazy_vp_lib/lazy_vp_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lib-lv-adapter/lib-lv-adapter.iml" filepath="$PROJECT_DIR$/../lib-lv-adapter/lib-lv-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lib-permission/lib-permission.iml" filepath="$PROJECT_DIR$/../lib-permission/lib-permission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-permission-aop.iml" filepath="$PROJECT_DIR$/lib-permission-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lib-rv-adapter/lib-rv-adapter.iml" filepath="$PROJECT_DIR$/../lib-rv-adapter/lib-rv-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../listadapter_demo/listadapter_demo.iml" filepath="$PROJECT_DIR$/../listadapter_demo/listadapter_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../observer_demo/observer_demo.iml" filepath="$PROJECT_DIR$/../observer_demo/observer_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../toolbar/toolbar.iml" filepath="$PROJECT_DIR$/../toolbar/toolbar.iml" />
+    </modules>
+  </component>
+</project>

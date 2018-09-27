@@ -10,7 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/customcontrols" />
-            <option value="$PROJECT_DIR$/lazy_vp_lib" />
+            <option value="$PROJECT_DIR$/lib-lazy-vp" />
             <option value="$PROJECT_DIR$/lib-lv-adapter" />
             <option value="$PROJECT_DIR$/lib-permission" />
             <option value="$PROJECT_DIR$/lib-permission-aop" />
