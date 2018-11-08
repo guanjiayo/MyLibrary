@@ -1,7 +1,7 @@
 package com.zhy.adapter.recyclerview.wrapper;
 
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -17,8 +17,8 @@ public class EmptyWrapper<T> extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public static final int ITEM_TYPE_EMPTY = Integer.MAX_VALUE - 1;
 
     private RecyclerView.Adapter mInnerAdapter;
-    private View mEmptyView;
-    private int mEmptyLayoutId;
+    private View                 mEmptyView;
+    private int                  mEmptyLayoutId;
 
 
     public EmptyWrapper(RecyclerView.Adapter adapter)

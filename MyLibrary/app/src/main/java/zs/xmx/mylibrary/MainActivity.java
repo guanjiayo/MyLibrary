@@ -1,9 +1,10 @@
 package zs.xmx.mylibrary;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -14,12 +15,16 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import zs.xmx.aop.login.LoginAssistant;
+import zs.xmx.aop.login.annotation.CheckLogin;
+import zs.xmx.aop.login.callback.ILoginCallback;
+import zs.xmx.aop.permission.annotation.NeedPermission;
+import zs.xmx.aop.permission.annotation.PermissionCanceled;
+import zs.xmx.aop.permission.annotation.PermissionDenied;
+import zs.xmx.aop.permission.bean.DenyBean;
 import zs.xmx.mylibrary.domain.AppInfo;
 import zs.xmx.mylibrary.lazy.LazyActivity;
-import zs.xmx.permission.annotation.NeedPermission;
-import zs.xmx.permission.annotation.PermissionCanceled;
-import zs.xmx.permission.annotation.PermissionDenied;
-import zs.xmx.permission.bean.DenyBean;
+
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private List<String> mList;
@@ -41,10 +46,29 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     private void initData() {
-        mList = new ArrayList<>();
+        initLoginState();
 
+        mList = new ArrayList<>();
         mList.add(new AppInfo("LazyViewPager (懒加载)").toString());
         mList.add(new AppInfo("AOP权限库测试").toString());
+        mList.add(new AppInfo("AOP集中式登录库测试").toString());
+    }
+
+    private void initLoginState() {
+        LoginAssistant.getInstance().setLoginCallBack(new ILoginCallback() {
+            @Override
+            public void loginFail(Context context, int tipType) {
+                if (tipType == 0) {
+                    Toast.makeText(context, "未登录,请登录", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public boolean isLogin(Context context) {
+                //return SP中的登录状态
+                return false;
+            }
+        });
     }
 
     private void initView() {
@@ -64,9 +88,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case 1:
                 callMap();
                 break;
+            case 2:
+                isLogined();
+                break;
             default:
                 break;
         }
+    }
+
+    @CheckLogin()
+    private void isLogined() {//已经登录过的后续操作
+        Toast.makeText(this, "已登录", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -91,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
      */
     @PermissionDenied
     public void dealPermission(DenyBean bean) {
-        Toast.makeText(this, bean.getDenyList()+"权限被拒绝", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, bean.getDenyList() + "权限被拒绝", Toast.LENGTH_SHORT).show();
     }
 
 }

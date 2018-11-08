@@ -5,8 +5,8 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.util.SimpleArrayMap;
+import androidx.core.app.ActivityCompat;
+import androidx.collection.SimpleArrayMap;
 
 /**
  * Created by mq on 2018/3/6 上午11:40

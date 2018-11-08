@@ -1,7 +1,7 @@
 package zs.xmx.permission.aspect;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -35,7 +35,7 @@ public class PermissonAspect {
     }
 
     @Around("requestPermissionMethod(needPermission)")
-    public void AroundJoinPoint(final ProceedingJoinPoint joinPoint, final NeedPermission needPermission) throws Throwable{
+    public void AroundJoinPoint(final ProceedingJoinPoint joinPoint, final NeedPermission needPermission) throws Throwable {
         Context context = null;
         final Object object = joinPoint.getThis();
         if (object instanceof Context) {
