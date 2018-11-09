@@ -1,7 +1,6 @@
 package zs.xmx.aop.login.aspect;
 
 import android.content.Context;
-import androidx.fragment.app.Fragment;
 import android.util.Log;
 
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -11,6 +10,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 
+import androidx.fragment.app.Fragment;
 import zs.xmx.aop.login.LoginAssistant;
 import zs.xmx.aop.login.annotation.CheckLogin;
 import zs.xmx.aop.login.callback.ILoginCallback;
@@ -30,7 +30,7 @@ public class CheckLoginAspect {
     private static final String TAG = "CheckLoginAspect";
 
     private static final String PERMISSION_REQUEST_POINTCUT =
-            "execution(@zs.xmx.login.annotation.CheckLogin * *(..))";
+            "execution(@zs.xmx.aop.login.annotation.CheckLogin * *(..))";
 
     @Pointcut(PERMISSION_REQUEST_POINTCUT + " && @annotation(checkLogin)")
     public void pointCutCheckLogin(CheckLogin checkLogin) {
@@ -64,7 +64,7 @@ public class CheckLoginAspect {
         if (callback.isLogin(context)) {
             joinPoint.proceed();
         } else {
-            callback.loginFail(context, checkLogin.tipType());
+            callback.unLogin(context, checkLogin.tipType());
         }
 
     }

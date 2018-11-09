@@ -1,7 +1,6 @@
 package zs.xmx.aop.permission.aspect;
 
 import android.content.Context;
-import androidx.fragment.app.Fragment;
 import android.util.Log;
 
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -11,6 +10,7 @@ import org.aspectj.lang.annotation.Pointcut;
 
 import java.util.List;
 
+import androidx.fragment.app.Fragment;
 import zs.xmx.aop.permission.PermissionRequestActivity;
 import zs.xmx.aop.permission.annotation.NeedPermission;
 import zs.xmx.aop.permission.annotation.PermissionCanceled;
@@ -29,7 +29,7 @@ public class PermissonAspect {
     private static final String TAG = "PermissionAspect";
 
     private static final String PERMISSION_REQUEST_POINTCUT =
-            "execution(@zs.xmx.permission.annotation.NeedPermission * *(..))";
+            "execution(@zs.xmx.aop.permission.annotation.NeedPermission * *(..))";
 
     @Pointcut(PERMISSION_REQUEST_POINTCUT + " && @annotation(needPermission)")
     public void requestPermissionMethod(NeedPermission needPermission) {

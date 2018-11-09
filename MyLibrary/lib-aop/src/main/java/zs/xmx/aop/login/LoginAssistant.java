@@ -11,7 +11,7 @@ import zs.xmx.aop.login.callback.ILoginCallback;
  * @内容说明   这个类放在全局Application里面
  * @使用说明   1.LoginAssistant.getInstance().setLoginCallBack(new ILoginCallback() {
             @Override
-            public void loginFail(Context context, int userDefine) {
+            public void unLogin(Context context, int userDefine) {
                 if (userDefine == 0) { //默认,可以自己传参
                     Toast.makeText(context, "未登录,请登录", Toast.LENGTH_SHORT).show();
                 }
@@ -29,6 +29,11 @@ import zs.xmx.aop.login.callback.ILoginCallback;
 public class LoginAssistant {
     private static LoginAssistant instance;
 
+    /**
+     * 用在当前项目的Application类
+     * <p>
+     * 好处:即使移除库,也不会对项目造成任何影响
+     */
     public static LoginAssistant getInstance() {
         if (instance == null) {
             synchronized (LoginAssistant.class) {

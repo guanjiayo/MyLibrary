@@ -11,12 +11,6 @@ import android.content.Context;
  *
  */
 public interface ILoginCallback {
-    /**
-     * 登录事件接收
-     *
-     * @param context
-     */
-    void loginFail(Context context, int tipType);
 
     /**
      * 判断是否登录
@@ -24,4 +18,11 @@ public interface ILoginCallback {
      * @param context
      */
     boolean isLogin(Context context);
+
+    /**
+     * 登录事件接收
+     *
+     * @param context
+     */
+    void unLogin(Context context, int tipType);
 }

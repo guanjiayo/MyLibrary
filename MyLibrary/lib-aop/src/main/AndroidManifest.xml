@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name=".PermissionRequestActivity"
+            android:name=".permission.PermissionRequestActivity"
             android:theme="@style/translucent"/>
     </application>
 

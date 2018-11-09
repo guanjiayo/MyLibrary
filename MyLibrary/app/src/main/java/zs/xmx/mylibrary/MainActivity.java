@@ -4,7 +4,6 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -15,6 +14,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.appcompat.app.AppCompatActivity;
 import zs.xmx.aop.login.LoginAssistant;
 import zs.xmx.aop.login.annotation.CheckLogin;
 import zs.xmx.aop.login.callback.ILoginCallback;
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private void initLoginState() {
         LoginAssistant.getInstance().setLoginCallBack(new ILoginCallback() {
             @Override
-            public void loginFail(Context context, int tipType) {
+            public void unLogin(Context context, int tipType) {
                 if (tipType == 0) {
                     Toast.makeText(context, "未登录,请登录", Toast.LENGTH_SHORT).show();
                 }
